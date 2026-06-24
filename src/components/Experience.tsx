@@ -1,104 +1,103 @@
 import { motion } from 'framer-motion';
-import { 
-  Users, 
-  MessageCircle, 
-  Sparkles, 
-  HeartHandshake, 
-  Grid, 
-  RefreshCw 
-} from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 export default function Experience() {
   const items = [
     {
-      icon: <Users size={16} className="text-aurora-wine" />,
       title: 'Jornada do Assinante',
-      desc: 'Construção de uma experiência imersiva e de alto padrão desde o primeiro contato no canal privado, elevando a percepção de valor.'
+      desc: 'Experiência imersiva e de alto padrão desde o primeiro contato no canal privado.'
     },
     {
-      icon: <MessageCircle size={16} className="text-aurora-wine" />,
       title: 'Comunicação Estratégica',
-      desc: 'Tom de voz refinado e interações personalizadas que criam sentimentos profundos de exclusividade e proximidade.'
+      desc: 'Tom de voz refinado e interações que geram sentimento de exclusividade.'
     },
     {
-      icon: <Sparkles size={16} className="text-aurora-wine" />,
       title: 'Conteúdo com Intenção',
-      desc: 'Planejamento estratégico de cronograma de postagens desenhado para engajar, atiçar a curiosidade e gerar desejo constante.'
+      desc: 'Cronograma planejado para engajar e atiçar a curiosidade e antecipação.'
     },
     {
-      icon: <HeartHandshake size={16} className="text-aurora-wine" />,
       title: 'Rotina de Relacionamento',
-      desc: 'Desenvolvimento de ações contínuas de fidelização para transformar assinantes ocasionais em membros recorrentes de longo prazo.'
+      desc: 'Ações de fidelização para transformar assinantes ocasionais em membros recorrentes.'
     },
     {
-      icon: <Grid size={16} className="text-aurora-wine" />,
       title: 'Organização de Prévias & PPV',
-      desc: 'Curadoria estratégica de catálogos e planejamento de campanhas premium sem expor desnecessariamente a imagem da criadora.'
+      desc: 'Curadoria estratégica de catálogos premium sem expor a imagem de forma óbvia.'
     },
     {
-      icon: <RefreshCw size={16} className="text-aurora-wine" />,
       title: 'Retenção & Recorrência',
-      desc: 'Análise diária de dados de assinatura para combater cancelamentos e maximizar a estabilidade do faturamento mensal recorrente.'
+      desc: 'Análise diária para combater cancelamentos e estabilizar o faturamento mensal.'
     }
   ];
 
   return (
     <section
       id="experiencia"
-      className="py-28 md:py-36 px-6 md:px-12 bg-aurora-offwhite relative overflow-hidden"
+      className="py-28 md:py-40 px-6 md:px-12 bg-aurora-black text-aurora-offwhite relative overflow-hidden"
     >
+      {/* Subtle background glow */}
+      <div className="absolute top-[40%] right-[-10%] w-[350px] h-[350px] rounded-full bg-aurora-wine/5 blur-[90px] pointer-events-none" />
+
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Column: Heading and intro copy */}
-          <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
-            <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
-              A Experiência
-            </span>
-            <h2 className="font-serif text-4xl sm:text-5xl text-aurora-black font-light leading-tight">
-              A experiência por trás do desejo
-            </h2>
+          {/* Left Column: Heading, intro copy & list */}
+          <div className="lg:col-span-6 space-y-8 z-10">
+            <div className="space-y-4">
+              <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
+                A Experiência
+              </span>
+              <h2 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight">
+                A experiência por trás do desejo
+              </h2>
+            </div>
+            
             <div className="w-12 h-[1px] bg-aurora-gold" />
             
-            <p className="text-aurora-taupe text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty pt-2">
+            <p className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty">
               Cada detalhe da jornada é pensado para aumentar conexão, retenção e percepção de valor. Da primeira impressão ao relacionamento contínuo, a Aurora organiza a experiência para que o público enxergue exclusividade, proximidade e desejo.
             </p>
-          </div>
 
-          {/* Right Column: Cards grid */}
-          <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* List items - highly editorial and lightweight */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-aurora-bege/5">
               {items.map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.05, duration: 0.7, ease: 'easeOut' }}
-                  whileHover={{ 
-                    y: -3,
-                    borderColor: 'rgba(91, 13, 24, 0.3)',
-                    boxShadow: '0 12px 24px -10px rgba(91, 13, 24, 0.03)'
-                  }}
-                  className="bg-aurora-bege/15 border border-aurora-bege/50 rounded-lg p-6 flex flex-col justify-between transition-all duration-300 group h-full"
-                >
-                  <div className="space-y-4">
-                    {/* Icon container */}
-                    <div className="w-8 h-8 rounded-lg bg-aurora-wine/5 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                      {item.icon}
-                    </div>
-
-                    <h3 className="font-serif text-base font-medium text-aurora-black group-hover:text-aurora-wine transition-colors duration-300">
+                <div key={idx} className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck size={12} className="text-aurora-gold flex-shrink-0" />
+                    <h3 className="font-serif text-sm font-medium text-aurora-offwhite">
                       {item.title}
                     </h3>
                   </div>
-
-                  <p className="text-aurora-taupe text-[11px] sm:text-xs md:text-sm font-light leading-relaxed tracking-wide mt-3">
+                  <p className="text-aurora-taupe text-[11px] sm:text-xs font-light leading-relaxed tracking-wide pl-5">
                     {item.desc}
                   </p>
-                </motion.div>
+                </div>
               ))}
             </div>
+          </div>
+
+          {/* Right Column: Premium Visual Image */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end z-10 w-full">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 30 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="relative w-full max-w-lg aspect-square sm:aspect-[4/3] lg:aspect-square bg-aurora-black-light rounded-xl overflow-hidden shadow-2xl border border-aurora-gold/15"
+            >
+              {/* Image asset loaded from public folder */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
+                style={{
+                  backgroundImage: 'url(/experience_silk.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}
+              />
+              
+              {/* Subtle visual overlays */}
+              <div className="absolute inset-0 bg-gradient-to-t from-aurora-black/50 to-transparent pointer-events-none" />
+              <div className="absolute inset-4 border border-aurora-gold/10 rounded-lg pointer-events-none" />
+            </motion.div>
           </div>
 
         </div>

@@ -18,10 +18,10 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: #5B0D18 #F7F4EF;
+  scrollbar-color: #5B0D18 #0D0D0D;
   scrollbar-width: thin;
-  background-color: #F7F4EF;
-  color: #0D0D0D;
+  background-color: #0D0D0D;
+  color: #F7F4EF;
 }
 
 body {
@@ -29,6 +29,7 @@ body {
   font-weight: 300;
   overflow-x: hidden;
   margin: 0;
+  background-color: #0D0D0D;
 }
 
 /* Custom Selection styling for premium branding feel */
@@ -43,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F7F4EF;
+  background: #0D0D0D;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -66,6 +67,6 @@ body {
 
 /* Custom background pattern for silk / luxury feel */
 .silk-overlay {
-  background-image: radial-gradient(rgba(91, 13, 24, 0.02) 1px, transparent 0);
+  background-image: radial-gradient(rgba(184, 155, 106, 0.015) 1px, transparent 0);
   background-size: 24px 24px;
 }

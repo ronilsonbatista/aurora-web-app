@@ -49,7 +49,7 @@ export default function CTA() {
   return (
     <section
       id="contato"
-      className="py-28 md:py-36 px-6 md:px-12 bg-aurora-offwhite relative overflow-hidden"
+      className="py-28 md:py-36 px-6 md:px-12 bg-aurora-black relative overflow-hidden"
     >
       {/* Background soft circles */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -65,20 +65,20 @@ export default function CTA() {
             <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
               Processo de Curadoria
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl text-aurora-black font-light leading-tight text-balance">
+            <h2 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight text-balance">
               Sua imagem pode ser uma marca desejada.
             </h2>
             <div className="w-12 h-[1px] bg-aurora-gold" />
-            <p className="text-aurora-taupe text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty pt-2">
+            <p className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty pt-2">
               Se você quer crescer com estética, estratégia e uma operação profissional por trás, envie seu perfil para avaliação.
             </p>
-            <p className="text-[10px] text-aurora-taupe/70 italic font-light tracking-wide pt-4 border-t border-aurora-bege/40">
+            <p className="text-[10px] text-aurora-taupe/70 italic font-light tracking-wide pt-4 border-t border-aurora-bege/5">
               *Todas as informações enviadas são tratadas sob absoluto sigilo e confidencialidade profissional.
             </p>
           </div>
 
           {/* Right Block: Interactive Form */}
-          <div className="lg:col-span-7 bg-aurora-bege/10 border border-aurora-bege/50 rounded-2xl p-6 md:p-10 shadow-sm relative">
+          <div className="lg:col-span-7 bg-[#121212] border border-aurora-bege/5 rounded-2xl p-6 md:p-10 shadow-lg relative">
             <AnimatePresence mode="wait">
               {!submitted ? (
                 <motion.form
@@ -91,7 +91,7 @@ export default function CTA() {
                 >
                   {/* Name field */}
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-black/80 block">
+                    <label htmlFor="name" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-offwhite block">
                       Nome Completo *
                     </label>
                     <input
@@ -102,13 +102,13 @@ export default function CTA() {
                       onChange={handleChange}
                       placeholder="Seu nome completo"
                       required
-                      className="w-full bg-aurora-offwhite border border-aurora-bege/80 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-black tracking-wider transition-all placeholder:text-aurora-taupe/40"
+                      className="w-full bg-aurora-black border border-aurora-bege/10 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-offwhite tracking-wider transition-all placeholder:text-aurora-taupe/40"
                     />
                   </div>
 
                   {/* Email field */}
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-black/80 block">
+                    <label htmlFor="email" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-offwhite block">
                       E-mail *
                     </label>
                     <input
@@ -119,14 +119,14 @@ export default function CTA() {
                       onChange={handleChange}
                       placeholder="seu.email@exemplo.com"
                       required
-                      className="w-full bg-aurora-offwhite border border-aurora-bege/80 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-black tracking-wider transition-all placeholder:text-aurora-taupe/40"
+                      className="w-full bg-aurora-black border border-aurora-bege/10 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-offwhite tracking-wider transition-all placeholder:text-aurora-taupe/40"
                     />
                   </div>
 
                   {/* Instagram & Whatsapp Inline Grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="instagram" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-black/80 block">
+                      <label htmlFor="instagram" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-offwhite block">
                         Instagram / Rede Social
                       </label>
                       <input
@@ -136,11 +136,11 @@ export default function CTA() {
                         value={formData.instagram}
                         onChange={handleChange}
                         placeholder="@seu_perfil"
-                        className="w-full bg-aurora-offwhite border border-aurora-bege/80 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-black tracking-wider transition-all placeholder:text-aurora-taupe/40"
+                        className="w-full bg-aurora-black border border-aurora-bege/10 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-offwhite tracking-wider transition-all placeholder:text-aurora-taupe/40"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="whatsapp" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-black/80 block">
+                      <label htmlFor="whatsapp" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-offwhite block">
                         WhatsApp *
                       </label>
                       <input
@@ -151,14 +151,14 @@ export default function CTA() {
                         onChange={handleChange}
                         placeholder="(11) 99999-9999"
                         required
-                        className="w-full bg-aurora-offwhite border border-aurora-bege/80 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-black tracking-wider transition-all placeholder:text-aurora-taupe/40"
+                        className="w-full bg-aurora-black border border-aurora-bege/10 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-offwhite tracking-wider transition-all placeholder:text-aurora-taupe/40"
                       />
                     </div>
                   </div>
 
                   {/* Message field */}
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-black/80 block">
+                    <label htmlFor="message" className="text-[9px] uppercase tracking-[0.25em] font-semibold text-aurora-offwhite block">
                       Fale um pouco sobre você e seus objetivos
                     </label>
                     <textarea
@@ -168,7 +168,7 @@ export default function CTA() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Conte um pouco sobre sua trajetória atual de conteúdo ou seus objetivos futuros."
-                      className="w-full bg-aurora-offwhite border border-aurora-bege/80 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-black tracking-wider transition-all resize-none placeholder:text-aurora-taupe/40"
+                      className="w-full bg-aurora-black border border-aurora-bege/10 focus:border-aurora-gold focus:outline-none rounded-lg px-4 py-3.5 text-xs text-aurora-offwhite tracking-wider transition-all resize-none placeholder:text-aurora-taupe/40"
                     />
                   </div>
 
@@ -188,7 +188,7 @@ export default function CTA() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-aurora-wine text-aurora-offwhite py-4 rounded-lg text-[10px] uppercase tracking-[0.25em] font-medium transition-all duration-300 hover:bg-aurora-wine-dark hover:shadow-lg hover:shadow-aurora-wine/10 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 border border-aurora-wine-dark"
+                    className="w-full bg-[#5B0D18] hover:bg-[#3A0710] text-aurora-offwhite py-4 rounded-lg text-[10px] uppercase tracking-[0.25em] font-medium transition-all duration-300 hover:shadow-lg hover:shadow-aurora-wine/10 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 border border-aurora-wine-dark"
                   >
                     {loading ? (
                       <span>Enviando...</span>
@@ -212,16 +212,16 @@ export default function CTA() {
                     <CheckCircle2 size={32} />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-serif text-2xl text-aurora-black font-light">
+                    <h3 className="font-serif text-2xl text-aurora-offwhite font-light">
                       Perfil Recebido!
                     </h3>
-                    <p className="text-aurora-taupe text-xs sm:text-sm font-light max-w-sm mx-auto leading-relaxed tracking-wider">
+                    <p className="text-aurora-bege/85 text-xs sm:text-sm font-light max-w-sm mx-auto leading-relaxed tracking-wider">
                       Nossa equipe de curadoria analisará suas informações e entrará em contato de forma extremamente discreta em até 48 horas.
                     </p>
                   </div>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="text-[9px] uppercase tracking-[0.2em] text-aurora-wine hover:text-aurora-gold font-semibold underline underline-offset-4 cursor-pointer"
+                    className="text-[9px] uppercase tracking-[0.2em] text-aurora-gold hover:text-aurora-offwhite font-semibold underline underline-offset-4 cursor-pointer"
                   >
                     Voltar ao formulário
                   </button>

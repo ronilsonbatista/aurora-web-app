@@ -4,8 +4,11 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="py-28 md:py-40 px-6 md:px-12 bg-aurora-offwhite relative overflow-hidden"
+      className="py-28 md:py-40 px-6 md:px-12 bg-aurora-black text-aurora-offwhite relative overflow-hidden"
     >
+      {/* Subtle wine-colored light bloom behind text */}
+      <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] rounded-full bg-aurora-wine/5 blur-[90px] pointer-events-none" />
+
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           
@@ -21,8 +24,8 @@ export default function About() {
               <span className="text-[10px] md:text-xs uppercase tracking-[0.35em] text-aurora-wine font-semibold block">
                 Sobre a Aurora & Co.
               </span>
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-black font-light leading-[1.15] text-balance">
-                Uma gestão feita para transformar <span className="italic text-aurora-wine">presença em desejo</span>.
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-offwhite font-light leading-[1.15] text-balance">
+                Uma gestão feita para transformar <span className="italic text-aurora-gold">presença em desejo</span>.
               </h2>
             </motion.div>
 
@@ -33,7 +36,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="space-y-6 text-aurora-taupe text-sm sm:text-base font-light leading-relaxed max-w-2xl tracking-wide text-pretty"
+              className="space-y-6 text-aurora-bege/80 text-sm sm:text-base font-light leading-relaxed max-w-2xl tracking-wide text-pretty"
             >
               <p>
                 A Aurora & Co. une posicionamento, estratégia, produção, operação e acompanhamento contínuo para criadoras que desejam crescer com segurança, estética e performance.
@@ -51,10 +54,10 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="relative w-full max-w-sm aspect-[4/5] bg-aurora-black p-8 md:p-12 flex flex-col justify-between shadow-2xl rounded-sm border border-aurora-gold/20 overflow-hidden"
+              className="relative w-full max-w-sm aspect-[4/5] bg-aurora-black-light p-8 md:p-12 flex flex-col justify-between shadow-2xl rounded-sm border border-aurora-gold/15 overflow-hidden"
             >
               {/* Inner subtle gold/wine glow */}
-              <div className="absolute top-[-50%] right-[-50%] w-[300px] h-[300px] rounded-full bg-aurora-wine/10 blur-[80px]" />
+              <div className="absolute top-[-50%] right-[-50%] w-[300px] h-[300px] rounded-full bg-aurora-wine/15 blur-[80px]" />
               <div className="absolute bottom-[-30%] left-[-30%] w-[250px] h-[250px] rounded-full bg-aurora-gold/5 blur-[70px]" />
               
               <div className="z-10">

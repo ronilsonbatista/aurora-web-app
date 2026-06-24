@@ -48,7 +48,7 @@ export default function Footer() {
             <a 
               href="#inicio" 
               onClick={(e) => handleNavClick(e, '#inicio')}
-              className="font-serif text-2xl tracking-[0.25em] text-aurora-wine hover:text-aurora-gold transition-colors duration-300 uppercase font-semibold block"
+              className="font-serif text-2xl tracking-[0.25em] text-aurora-gold hover:text-aurora-offwhite transition-colors duration-300 uppercase font-semibold block"
             >
               Aurora & Co.
             </a>
@@ -129,7 +129,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Legal & Compliance Banner (11. Conteúdo legal e profissional) */}
+        {/* Legal & Compliance Banner */}
         <div className="py-8 border-b border-aurora-bege/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-[10px] text-aurora-taupe tracking-widest uppercase font-light">
           <div className="flex items-start gap-2">
             <ShieldCheck size={12} className="text-aurora-gold mt-0.5 flex-shrink-0" />
