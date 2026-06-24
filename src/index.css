@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-aurora-wine: #5B0D18;
+  --color-aurora-wine-light: #8A1A28;
+  --color-aurora-black: #0D0D0D;
+  --color-aurora-black-light: #1A1A1A;
+  --color-aurora-taupe: #7A6A63;
+  --color-aurora-taupe-light: #94827A;
+  --color-aurora-bege: #E8E2DA;
+  --color-aurora-offwhite: #F7F4EF;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #5B0D18 #F7F4EF;
+  scrollbar-width: thin;
+  background-color: #F7F4EF;
+  color: #0D0D0D;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Custom Selection styling for premium branding feel */
+::selection {
+  background-color: #5B0D18;
+  color: #F7F4EF;
+}
+
+/* Custom Scrollbar Styles for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F4EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5B0D18;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8A1A28;
+}
+
+/* Smooth fade-in reveals and page elements */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Custom background pattern for silk / luxury feel */
+.silk-overlay {
+  background-image: radial-gradient(rgba(91, 13, 24, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
