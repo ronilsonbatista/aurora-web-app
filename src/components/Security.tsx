@@ -10,17 +10,17 @@ export default function Security() {
     {
       icon: <FileText className="text-aurora-gold" size={18} />,
       title: 'Segurança Jurídica',
-      description: 'Contrato estruturado por assessoria legal, assegurando a formalidade e garantias da nossa parceria.'
+      description: 'Parceria formalizada com contratos claros e seguros, garantindo seus direitos autorais e total segurança jurídica.'
     },
     {
       icon: <ShieldCheck className="text-aurora-gold" size={18} />,
       title: 'Blindagem de Identidade',
-      description: 'Geobloqueio regional completo e blindagem de dados para garantir sua total privacidade.'
+      description: 'Geobloqueio regional ativo, ocultação de perfil em países ou estados indesejados e proteção contra vazamento de imagens.'
     },
     {
       icon: <DollarSign className="text-aurora-gold" size={18} />,
       title: 'Organização Financeira',
-      description: 'Conciliação ágil, relatórios claros e repasses pontuais organizados de forma transparente.'
+      description: 'Repasses pontuais direto para sua conta de preferência, acompanhados de relatórios transparentes de faturamento.'
     }
   ];
 
@@ -36,7 +36,7 @@ export default function Security() {
         
         {/* Header */}
         <div className="max-w-3xl mb-20 md:mb-28 space-y-6">
-          <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
+          <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
             Segurança & Blindagem
           </span>
           <motion.h2
@@ -44,13 +44,13 @@ export default function Security() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight text-balance"
+            className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-offwhite font-light leading-tight text-balance"
           >
             Discrição, contrato e estrutura corporativa.
           </motion.h2>
           <div className="w-12 h-[1px] bg-aurora-gold" />
-          <p className="text-aurora-taupe text-xs sm:text-sm md:text-base font-light tracking-widest max-w-xl leading-relaxed pt-2">
-            Toda a nossa operação é pautada pelo profissionalismo corporativo, assegurando a proteção integral da sua imagem e dos seus dados.
+          <p className="text-aurora-taupe text-sm sm:text-base md:text-lg font-light tracking-widest max-w-xl leading-relaxed pt-2">
+            Trabalhamos sob sigilo profissional rigoroso e infraestrutura corporativa robusta, garantindo a proteção e blindagem integral da sua identidade.
           </p>
         </div>
 
@@ -77,13 +77,13 @@ export default function Security() {
                 </div>
                 
                 {/* Title */}
-                <h3 className="font-serif text-lg font-medium text-aurora-offwhite group-hover:text-aurora-wine transition-colors duration-300">
+                <h3 className="font-serif text-xl font-medium text-aurora-offwhite group-hover:text-aurora-wine transition-colors duration-300">
                   {item.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-aurora-taupe text-[11px] sm:text-xs md:text-sm font-light leading-relaxed mt-4 tracking-wide">
+              <p className="text-aurora-taupe text-xs sm:text-sm md:text-base font-light leading-relaxed mt-4 tracking-wide">
                 {item.description}
               </p>
             </motion.div>

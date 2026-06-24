@@ -96,28 +96,16 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
       </div>
 
       {/* ── FAR-LEFT VERTICAL DECORATIVE LABEL ── */}
-      <div className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6 z-20 hidden md:flex text-aurora-taupe/65 text-[7px] lg:text-[8px] uppercase tracking-[0.45em] select-none">
-        <span className="text-aurora-gold text-[10px] animate-pulse">✦</span>
+      <div className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6 z-20 hidden md:flex text-aurora-taupe/65 text-[9px] lg:text-[10px] uppercase tracking-[0.45em] select-none">
+        <span className="text-aurora-gold text-[12px] animate-pulse">✦</span>
         <span style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
-          DESPRTE DESEJOS. VIVA INTENSAMENTE.
+          DESPERTE DESEJOS. VIVA EXCLUSIVAMENTE.
         </span>
       </div>
 
       {/* ── CENTER EDITORIAL CONTENT ── */}
       <div className="max-w-4xl mx-auto text-center z-20 flex flex-col items-center select-none pt-8">
         
-        {/* Delicate A Ornament */}
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="flex items-center gap-4 mb-4 select-none"
-        >
-          <div className="w-8 h-[1px] bg-aurora-gold/25" />
-          <span className="font-serif text-3xl font-light text-aurora-gold italic tracking-widest leading-none">A</span>
-          <div className="w-8 h-[1px] bg-aurora-gold/25" />
-        </motion.div>
-
         {/* Brand Name Title */}
         <motion.h1
           initial={{ opacity: 0, letterSpacing: '0.05em' }}
@@ -125,7 +113,7 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           transition={{ duration: 1.6, ease: 'easeOut' }}
           className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-[6.5rem] font-light text-aurora-gold tracking-[0.12em] uppercase leading-none mb-6 select-none"
         >
-          AURORA & CO.
+          AURORA & CO
         </motion.h1>
 
         {/* Gold Tagline */}
@@ -133,9 +121,9 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1.2, ease: 'easeOut' }}
-          className="font-sans text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.45em] text-aurora-gold/90 font-medium block"
+          className="font-sans text-xs sm:text-sm md:text-base uppercase tracking-[0.45em] text-aurora-gold/90 font-medium block"
         >
-          Gestão premium para criadoras.
+          Gestão premium para criadoras de conteúdo exclusivo
         </motion.h2>
 
         {/* Delicate separator line */}
@@ -151,9 +139,9 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 1.2, ease: 'easeOut' }}
-          className="max-w-xl text-[11px] sm:text-xs md:text-sm text-aurora-bege/85 font-light tracking-widest leading-relaxed mb-10 px-6 text-balance"
+          className="max-w-xl text-xs sm:text-sm md:text-base lg:text-lg text-aurora-bege/85 font-light tracking-widest leading-relaxed mb-10 px-6 text-balance"
         >
-          Transformamos presença digital em desejo absoluto e faturamento recorrente.
+          Transformamos sua imagem em desejo absoluto e faturamento recorrente.
         </motion.p>
 
         {/* Action CTAs */}
@@ -165,14 +153,14 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
         >
           <button
             onClick={onJoinClick}
-            className="w-full sm:w-auto bg-[#5B0D18] hover:bg-[#3A0710] border border-[#5B0D18] text-aurora-offwhite px-10 py-4 rounded-full text-[9px] uppercase tracking-[0.25em] font-medium transition-all duration-300 hover:shadow-xl hover:shadow-aurora-wine/10 cursor-pointer"
+            className="w-full sm:w-auto bg-[#5B0D18] hover:bg-[#3A0710] border border-[#5B0D18] text-aurora-offwhite px-10 py-4 rounded-full text-[10px] sm:text-xs uppercase tracking-[0.25em] font-medium transition-all duration-300 hover:shadow-xl hover:shadow-aurora-wine/10 cursor-pointer"
           >
             Quero fazer parte
           </button>
 
           <button
             onClick={onStructureClick}
-            className="w-full sm:w-auto bg-transparent text-aurora-offwhite border border-aurora-gold/60 hover:bg-aurora-gold hover:text-aurora-black px-10 py-4 rounded-full text-[9px] uppercase tracking-[0.25em] font-medium transition-all duration-300 cursor-pointer"
+            className="w-full sm:w-auto bg-transparent text-aurora-offwhite border border-aurora-gold/60 hover:bg-aurora-gold hover:text-aurora-black px-10 py-4 rounded-full text-[10px] sm:text-xs uppercase tracking-[0.25em] font-medium transition-all duration-300 cursor-pointer"
           >
             Conhecer estrutura
           </button>
@@ -182,15 +170,15 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
       {/* ── BOTTOM CONTROLS & WARNINGS ── */}
 
       {/* Bottom-left: Circled 18+ warning */}
-      <div className="absolute bottom-6 left-6 flex items-center gap-3 z-20 text-aurora-taupe/70 text-[8px] lg:text-[9px] font-light tracking-widest select-none">
-        <span className="w-5 h-5 rounded-full border border-aurora-wine flex items-center justify-center text-[9px] font-semibold text-aurora-wine-light flex-shrink-0">18</span>
+      <div className="absolute bottom-6 left-6 flex items-center gap-3 z-20 text-aurora-taupe/70 text-[10px] lg:text-[11px] font-light tracking-widest select-none">
+        <span className="w-6 h-6 rounded-full border border-aurora-wine flex items-center justify-center text-[10px] font-semibold text-aurora-wine-light flex-shrink-0">18</span>
         <span className="hidden sm:inline">Conteúdo destinado apenas para maiores de 18 anos.</span>
         <span className="sm:hidden">Maiores de 18 anos.</span>
       </div>
 
       {/* Bottom-center: "Descubra" Mouse Wheel indicator */}
       <div 
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2.5 z-20 text-aurora-taupe/85 text-[8px] uppercase tracking-[0.45em] select-none cursor-pointer"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2.5 z-20 text-aurora-taupe/85 text-[10px] uppercase tracking-[0.45em] select-none cursor-pointer"
         onClick={onStructureClick}
       >
         <span>Descubra</span>
@@ -206,13 +194,13 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
       {/* Bottom-right: Gold Social Icons */}
       <div className="absolute bottom-6 right-6 flex items-center gap-5 z-20 text-aurora-gold/80 hidden sm:flex">
         <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-aurora-offwhite transition-colors duration-300">
-          <Instagram size={14} />
+          <Instagram size={16} />
         </a>
         <a href="https://t.me" target="_blank" rel="noreferrer" className="hover:text-aurora-offwhite transition-colors duration-300">
-          <Telegram size={14} />
+          <Telegram size={16} />
         </a>
         <a href="https://wa.me" target="_blank" rel="noreferrer" className="hover:text-aurora-offwhite transition-colors duration-300">
-          <WhatsApp size={14} />
+          <WhatsApp size={16} />
         </a>
       </div>
     </section>

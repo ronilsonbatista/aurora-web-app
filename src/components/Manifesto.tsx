@@ -35,7 +35,7 @@ export default function Manifesto() {
       <div className="absolute inset-6 md:inset-12 border border-aurora-bege/10 pointer-events-none"></div>
 
       <div className="max-w-4xl mx-auto z-10 relative flex flex-col items-center justify-center space-y-12">
-        <span className="text-[10px] md:text-xs uppercase tracking-[0.5em] text-aurora-bege/60 font-medium block">
+        <span className="text-xs md:text-sm uppercase tracking-[0.5em] text-aurora-bege/60 font-medium block">
           Nosso Manifesto
         </span>
 
@@ -66,8 +66,8 @@ export default function Manifesto() {
           transition={{ delay: 1, duration: 1 }}
           className="max-w-xl mx-auto pt-6 border-t border-aurora-bege/20"
         >
-          <p className="text-sm sm:text-base md:text-lg text-aurora-bege font-light tracking-widest leading-relaxed text-pretty">
-            A Aurora & Co. nasce para transformar desejo em marca, estética em presença e presença em resultado.
+          <p className="text-base sm:text-lg md:text-xl text-aurora-bege font-light tracking-widest leading-relaxed text-pretty">
+            A Aurora & Co nasce para transformar desejo em marca, estética em presença e presença em resultado.
           </p>
         </motion.div>
       </div>

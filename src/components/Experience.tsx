@@ -5,15 +5,15 @@ export default function Experience() {
   const items = [
     {
       title: 'Jornada de Exclusividade',
-      desc: 'Experiência de alto padrão que transforma fãs em assinantes altamente fiéis.'
+      desc: 'Funil de atração e onboarding que convertem seguidores casuais em assinantes de canais privados.'
     },
     {
       title: 'Retenção & Recorrência',
-      desc: 'Gestão ativa para reduzir evasão e estabilizar seu faturamento mensal.'
+      desc: 'Estratégias de engajamento diário e campanhas exclusivas para reduzir evasão e estabilizar o faturamento.'
     },
     {
       title: 'Monetização Silenciosa',
-      desc: 'Vendas de alto ticket focadas em criar antecipação e desejo contínuo.'
+      desc: 'Comercialização discreta de conteúdos premium (PPV) e mimos por meio de conversas personalizadas no chat privado.'
     }
   ];
 
@@ -31,18 +31,18 @@ export default function Experience() {
           {/* Left Column: Heading, intro copy & list */}
           <div className="lg:col-span-6 space-y-8 z-10">
             <div className="space-y-4">
-              <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
+              <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
                 A Experiência
               </span>
-              <h2 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight">
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-offwhite font-light leading-tight">
                 A experiência por trás do desejo
               </h2>
             </div>
             
             <div className="w-12 h-[1px] bg-aurora-gold" />
             
-            <p className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty">
-              Cada detalhe da jornada é planejado para aumentar conexão, retenção e valor. Do primeiro contato ao relacionamento privado, estruturamos tudo para que o público sinta exclusividade.
+            <p className="text-aurora-bege/80 text-sm sm:text-base md:text-lg font-light leading-relaxed tracking-widest text-pretty">
+              Cada detalhe da jornada do assinante é estruturado para despertar desejo e exclusividade. Do funil de atração ao atendimento no chat privado, otimizamos todo o ciclo de faturamento.
             </p>
 
             {/* List items - highly editorial and lightweight */}
@@ -51,11 +51,11 @@ export default function Experience() {
                 <div key={idx} className="space-y-1">
                   <div className="flex items-center gap-2">
                     <ShieldCheck size={12} className="text-aurora-gold flex-shrink-0" />
-                    <h3 className="font-serif text-sm font-medium text-aurora-offwhite">
+                    <h3 className="font-serif text-base font-medium text-aurora-offwhite">
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-aurora-taupe text-[11px] sm:text-xs font-light leading-relaxed tracking-wide pl-5">
+                  <p className="text-aurora-taupe text-xs sm:text-sm font-light leading-relaxed tracking-wide pl-5">
                     {item.desc}
                   </p>
                 </div>

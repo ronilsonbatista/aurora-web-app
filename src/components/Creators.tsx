@@ -23,7 +23,7 @@ export default function Creators() {
           {/* Left Column: Text Content */}
           <div className="lg:col-span-6 space-y-8 z-10">
             <div className="space-y-4">
-              <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
+              <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
                 Para Criadoras
               </span>
               <motion.h2
@@ -31,7 +31,7 @@ export default function Creators() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight text-balance"
+                className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-offwhite font-light leading-tight text-balance"
               >
                 Você cria. <br />
                 <span className="italic text-aurora-gold">A Aurora cuida de todo o resto.</span>
@@ -45,9 +45,9 @@ export default function Creators() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty"
+              className="text-aurora-bege/80 text-sm sm:text-base md:text-lg font-light leading-relaxed tracking-widest text-pretty"
             >
-              Atuamos ao lado de criadoras selecionadas estruturando marca, conteúdo, canais e operação. Você foca na sua presença; nós cuidamos da estratégia e do crescimento.
+              Atuamos ao lado de criadoras de conteúdo exclusivo de alto padrão, estruturando marca, conteúdo, tráfego e canais. Você foca na sua presença; nós cuidamos da estratégia e da escala operacional.
             </motion.p>
 
             {/* Checklist */}
@@ -57,7 +57,7 @@ export default function Creators() {
                   <div className="mt-1 flex-shrink-0 w-3.5 h-3.5 rounded-full bg-aurora-wine/20 flex items-center justify-center">
                     <Check size={10} className="text-aurora-gold" />
                   </div>
-                  <span className="text-[11px] sm:text-xs md:text-sm text-aurora-bege/70 font-light tracking-wide leading-snug">
+                  <span className="text-xs sm:text-sm md:text-base text-aurora-bege/70 font-light tracking-wide leading-snug">
                     {point}
                   </span>
                 </div>
@@ -79,39 +79,39 @@ export default function Creators() {
               <div className="absolute -bottom-24 -right-24 w-48 h-48 rounded-full bg-aurora-gold/10 blur-[60px]" />
 
               <div className="relative z-10 space-y-6">
-                <span className="text-[10px] md:text-xs uppercase tracking-[0.35em] text-aurora-gold font-semibold block">
+                <span className="text-xs md:text-sm uppercase tracking-[0.35em] text-aurora-gold font-semibold block">
                   Modelo de Sociedade
                 </span>
 
-                <h3 className="font-serif text-2xl md:text-3xl text-aurora-offwhite font-light">
+                <h3 className="font-serif text-3xl md:text-4xl text-aurora-offwhite font-light">
                   Divisão de Parceria
                 </h3>
 
                 {/* Big Split Percentage Display */}
                 <div className="grid grid-cols-2 gap-4 py-8 border-y border-aurora-offwhite/10 my-6">
                   <div className="space-y-2">
-                    <span className="font-serif text-4xl sm:text-5xl md:text-6xl font-light text-aurora-offwhite block tracking-tighter">
+                    <span className="font-serif text-5xl sm:text-6xl md:text-7xl font-light text-aurora-offwhite block tracking-tighter">
                       50%
                     </span>
-                    <span className="text-[10px] tracking-[0.2em] uppercase text-aurora-bege/60 font-light block">
+                    <span className="text-xs tracking-[0.2em] uppercase text-aurora-bege/60 font-light block">
                       Criadora
                     </span>
                   </div>
                   <div className="space-y-2 border-l border-aurora-offwhite/10">
-                    <span className="font-serif text-4xl sm:text-5xl md:text-6xl font-light text-aurora-gold block tracking-tighter">
+                    <span className="font-serif text-5xl sm:text-6xl md:text-7xl font-light text-aurora-gold block tracking-tighter">
                       50%
                     </span>
-                    <span className="text-[10px] tracking-[0.2em] uppercase text-aurora-bege/60 font-light block">
+                    <span className="text-xs tracking-[0.2em] uppercase text-aurora-bege/60 font-light block">
                       Aurora & Co.
                     </span>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-[11px] sm:text-xs text-aurora-bege/60 font-light leading-relaxed tracking-wider">
+                  <p className="text-xs sm:text-sm text-aurora-bege/60 font-light leading-relaxed tracking-wider">
                     Parceria com contrato, alinhamento de expectativas e operação profissional.
                   </p>
-                  <p className="text-[10px] text-aurora-gold/80 font-light uppercase tracking-[0.2em] border border-aurora-gold/20 py-2.5 rounded-full bg-aurora-gold/5 max-w-[280px] mx-auto">
+                  <p className="text-xs text-aurora-gold/80 font-light uppercase tracking-[0.2em] border border-aurora-gold/20 py-2.5 rounded-full bg-aurora-gold/5 max-w-[280px] mx-auto">
                     Só lucramos quando você lucra.
                   </p>
                 </div>

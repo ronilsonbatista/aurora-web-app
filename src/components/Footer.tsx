@@ -48,21 +48,21 @@ export default function Footer() {
             <a 
               href="#inicio" 
               onClick={(e) => handleNavClick(e, '#inicio')}
-              className="font-serif text-2xl tracking-[0.25em] text-aurora-gold hover:text-aurora-offwhite transition-colors duration-300 uppercase font-semibold block"
+              className="font-serif text-3xl tracking-[0.25em] text-aurora-gold hover:text-aurora-offwhite transition-colors duration-300 uppercase font-semibold block"
             >
-              Aurora & Co.
+              Aurora & Co
             </a>
-            <p className="font-serif italic text-base text-aurora-bege/80 max-w-sm tracking-wide font-light">
-              Desperte desejos. Viva intensamente.
+            <p className="font-serif italic text-base sm:text-lg text-aurora-bege/80 max-w-sm tracking-wide font-light">
+              Desperte desejos. Viva exclusivamente.
             </p>
-            <p className="text-xs text-aurora-taupe font-light leading-relaxed max-w-sm tracking-widest uppercase">
-              Gestão, estética e crescimento para criadoras.
+            <p className="text-sm text-aurora-taupe font-light leading-relaxed max-w-sm tracking-widest uppercase">
+              Gestão, estética e crescimento para criadoras de conteúdo exclusivo.
             </p>
           </div>
 
           {/* Navigation Links (3 cols) */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="text-[10px] uppercase tracking-[0.25em] font-semibold text-aurora-wine">
+            <h4 className="text-xs uppercase tracking-[0.25em] font-semibold text-aurora-wine">
               Navegação
             </h4>
             <ul className="space-y-3">
@@ -78,7 +78,7 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-xs text-aurora-taupe hover:text-aurora-offwhite transition-colors tracking-widest uppercase font-medium"
+                    className="text-sm text-aurora-taupe hover:text-aurora-offwhite transition-colors tracking-widest uppercase font-medium"
                   >
                     {link.label}
                   </a>
@@ -89,7 +89,7 @@ export default function Footer() {
 
           {/* Socials / Contacts (4 cols) */}
           <div className="md:col-span-4 space-y-4">
-            <h4 className="text-[10px] uppercase tracking-[0.25em] font-semibold text-aurora-wine">
+            <h4 className="text-xs uppercase tracking-[0.25em] font-semibold text-aurora-wine">
               Contato & Redes
             </h4>
             <ul className="space-y-3">
@@ -98,7 +98,7 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-3 text-xs text-aurora-taupe hover:text-aurora-offwhite transition-colors font-light tracking-wide"
+                  className="flex items-center gap-3 text-sm text-aurora-taupe hover:text-aurora-offwhite transition-colors font-light tracking-wide"
                 >
                   <Instagram size={14} className="text-aurora-wine" />
                   <span>@aurora.management</span>
@@ -107,7 +107,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:contato@aurora-co.com"
-                  className="flex items-center gap-3 text-xs text-aurora-taupe hover:text-aurora-offwhite transition-colors font-light tracking-wide"
+                  className="flex items-center gap-3 text-sm text-aurora-taupe hover:text-aurora-offwhite transition-colors font-light tracking-wide"
                 >
                   <Mail size={14} className="text-aurora-wine" />
                   <span>contato@aurora-co.com</span>
@@ -118,7 +118,7 @@ export default function Footer() {
                   href="https://wa.me/5511999999999"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-3 text-xs text-aurora-taupe hover:text-aurora-offwhite transition-colors font-light tracking-wide"
+                  className="flex items-center gap-3 text-sm text-aurora-taupe hover:text-aurora-offwhite transition-colors font-light tracking-wide"
                 >
                   <Phone size={14} className="text-aurora-wine" />
                   <span>WhatsApp</span>
@@ -130,7 +130,7 @@ export default function Footer() {
         </div>
 
         {/* Legal & Compliance Banner */}
-        <div className="py-8 border-b border-aurora-bege/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-[10px] text-aurora-taupe tracking-widest uppercase font-light">
+        <div className="py-8 border-b border-aurora-bege/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs text-aurora-taupe tracking-widest uppercase font-light">
           <div className="flex items-start gap-2">
             <ShieldCheck size={12} className="text-aurora-gold mt-0.5 flex-shrink-0" />
             <span>Atuação exclusiva com criadoras maiores de 18 anos (18+)</span>
@@ -150,7 +150,7 @@ export default function Footer() {
         </div>
 
         {/* Copyrights and Terms */}
-        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 text-[10px] text-aurora-taupe/80 tracking-widest font-light gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 text-xs text-aurora-taupe/80 tracking-widest font-light gap-4">
           <p>© {currentYear} Aurora & Co. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <a href="#termos" className="hover:text-aurora-offwhite transition-colors uppercase">

@@ -21,10 +21,10 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="space-y-4"
             >
-              <span className="text-[10px] md:text-xs uppercase tracking-[0.35em] text-aurora-wine font-semibold block">
+              <span className="text-xs md:text-sm uppercase tracking-[0.35em] text-aurora-wine font-semibold block">
                 Sobre a Aurora & Co.
               </span>
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-offwhite font-light leading-[1.15] text-balance">
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-aurora-offwhite font-light leading-[1.15] text-balance">
                 Uma gestão feita para transformar <span className="italic text-aurora-gold">presença em desejo</span>.
               </h2>
             </motion.div>
@@ -36,13 +36,13 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="space-y-6 text-aurora-bege/80 text-sm sm:text-base font-light leading-relaxed max-w-2xl tracking-wide text-pretty"
+              className="space-y-6 text-aurora-bege/80 text-base sm:text-lg md:text-xl font-light leading-relaxed max-w-2xl tracking-wide text-pretty"
             >
               <p>
-                A Aurora & Co. desenvolve ecossistemas estratégicos e estéticos sob medida para elevar a percepção de valor de criadoras de alto nível.
+                A Aurora & Co. desenvolve ecossistemas estratégicos e estéticos sob medida para elevar a percepção de valor de criadoras de conteúdo exclusivo de alto padrão.
               </p>
               <p>
-                Unimos direção artística, blindagem total e monetização de alto ticket, transformando conexões genuínas em faturamento recorrente.
+                Unimos direção artística, blindagem de identidade e monetização de alto ticket em plataformas privadas, transformando conexões em faturamento recorrente.
               </p>
             </motion.div>
           </div>
@@ -61,15 +61,15 @@ export default function About() {
               <div className="absolute bottom-[-30%] left-[-30%] w-[250px] h-[250px] rounded-full bg-aurora-gold/5 blur-[70px]" />
               
               <div className="z-10">
-                <span className="font-serif text-4xl text-aurora-gold italic font-light">A.</span>
+                <span className="font-serif text-5xl text-aurora-gold italic font-light">A</span>
                 <div className="w-8 h-[1px] bg-aurora-wine my-4" />
               </div>
 
               <div className="z-10 space-y-4">
-                <p className="font-serif text-xl sm:text-2xl text-aurora-offwhite/90 tracking-wide italic leading-relaxed font-light">
+                <p className="font-serif text-2xl sm:text-3xl text-aurora-offwhite/90 tracking-wide italic leading-relaxed font-light">
                   "A beleza do mistério atrai mais do que a obviedade da exposição."
                 </p>
-                <p className="text-[9px] tracking-[0.25em] uppercase text-aurora-gold/80 font-medium">
+                <p className="text-[10px] sm:text-xs tracking-[0.25em] uppercase text-aurora-gold/80 font-medium">
                   Estratégia & Sofisticação
                 </p>
               </div>

@@ -13,25 +13,25 @@ export default function Services() {
       num: '01',
       icon: <Sparkles size={16} className="text-aurora-gold" />,
       title: 'Branding & Imagem',
-      description: 'Direção artística e posicionamento de luxo para elevar a percepção de valor do seu perfil.'
+      description: 'Direção artística e posicionamento de luxo para destacar e valorizar seu perfil exclusivo.'
     },
     {
       num: '02',
       icon: <Compass size={16} className="text-aurora-gold" />,
       title: 'Conteúdo & Narrativa',
-      description: 'Estratégia narrativa personalizada e funis que despertam desejo imediato e conversão.'
+      description: 'Estratégia de conteúdo e funis de atração que despertam desejo e direcionam tráfego para canais privados.'
     },
     {
       num: '03',
       icon: <Layers size={16} className="text-aurora-gold" />,
       title: 'Operação & Blindagem',
-      description: 'Gestão técnica e administrativa completa para blindar sua rotina de criação.'
+      description: 'Infraestrutura completa de upload, geobloqueio e segurança para blindar sua rotina de criação.'
     },
     {
       num: '04',
       icon: <MessageSquare size={16} className="text-aurora-gold" />,
       title: 'Vendas & Relacionamento',
-      description: 'Relacionamento privado de alto ticket conduzido por profissionais qualificados.'
+      description: 'Gestão de conversação (chatter) e vendas de alto ticket, gerando faturamento com discrição.'
     }
   ];
 
@@ -62,14 +62,14 @@ export default function Services() {
         
         {/* Header section */}
         <div className="text-center max-w-3xl mx-auto mb-20 md:mb-28 space-y-4">
-          <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
+          <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
             Nossos Pilares
           </span>
-          <h2 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight">
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-offwhite font-light leading-tight">
             O que a Aurora entrega
           </h2>
           <div className="w-12 h-[1px] bg-aurora-gold mx-auto mt-6" />
-          <p className="text-aurora-bege/60 text-xs sm:text-sm md:text-base font-light tracking-widest max-w-xl mx-auto leading-relaxed pt-2">
+          <p className="text-aurora-bege/60 text-sm sm:text-base md:text-lg font-light tracking-widest max-w-xl mx-auto leading-relaxed pt-2">
             Cuidamos de toda a inteligência estratégica e operacional para que sua imagem atinja o mais alto patamar de desejo.
           </p>
         </div>
@@ -101,19 +101,19 @@ export default function Services() {
                   </div>
                   
                   {/* Editorial Index Number */}
-                  <span className="font-serif text-xs italic text-aurora-gold/60 font-light">
+                  <span className="font-serif text-sm italic text-aurora-gold/60 font-light">
                     {service.num}
                   </span>
                 </div>
                 
                 {/* Title */}
-                <h3 className="font-serif text-lg font-medium text-aurora-offwhite mb-3">
+                <h3 className="font-serif text-xl font-medium text-aurora-offwhite mb-3">
                   {service.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-aurora-bege/60 text-[11px] sm:text-xs md:text-sm font-light leading-relaxed tracking-wide mt-2">
+              <p className="text-aurora-bege/60 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-wide mt-2">
                 {service.description}
               </p>
             </motion.div>

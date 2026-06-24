@@ -78,9 +78,9 @@ export default function Header({ onJoinClick }: HeaderProps) {
         <a 
           href="#inicio" 
           onClick={(e) => handleNavClick(e, '#inicio')}
-          className="font-serif text-lg tracking-[0.25em] font-medium text-aurora-offwhite hover:text-aurora-gold transition-colors duration-300 uppercase flex items-center gap-2"
+          className="font-serif text-xl tracking-[0.25em] font-medium text-aurora-offwhite hover:text-aurora-gold transition-colors duration-300 uppercase flex items-center gap-2"
         >
-          <span className="text-aurora-gold font-light">✦</span> AURORA & CO.
+          <span className="text-aurora-gold font-light">✦</span> AURORA & CO
         </a>
 
         {/* Center: Desktop Navigation */}
@@ -92,7 +92,7 @@ export default function Header({ onJoinClick }: HeaderProps) {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className={`text-[10px] uppercase tracking-[0.25em] font-light transition-all duration-300 relative py-1 ${
+                className={`text-[11px] sm:text-xs uppercase tracking-[0.25em] font-light transition-all duration-300 relative py-1 ${
                   isActive ? 'text-aurora-offwhite font-medium' : 'text-aurora-taupe hover:text-aurora-offwhite'
                 }`}
               >
@@ -109,7 +109,7 @@ export default function Header({ onJoinClick }: HeaderProps) {
         <div className="hidden lg:block">
           <button
             onClick={onJoinClick}
-            className="group bg-transparent text-aurora-gold border border-aurora-gold/60 px-6 py-2.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:bg-aurora-gold hover:text-aurora-black flex items-center gap-2 cursor-pointer"
+            className="group bg-transparent text-aurora-gold border border-aurora-gold/60 px-6 py-2.5 rounded-full text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:bg-aurora-gold hover:text-aurora-black flex items-center gap-2 cursor-pointer"
           >
             <span>Quero fazer parte</span>
             <ArrowRight size={10} className="group-hover:translate-x-0.5 transition-transform" />
@@ -141,7 +141,7 @@ export default function Header({ onJoinClick }: HeaderProps) {
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`text-xs uppercase tracking-[0.25em] font-light transition-colors duration-300 pb-3 border-b ${
+                  className={`text-sm uppercase tracking-[0.25em] font-light transition-colors duration-300 pb-3 border-b ${
                     isActive 
                       ? 'text-aurora-gold border-aurora-gold/30 font-medium' 
                       : 'text-aurora-taupe border-aurora-bege/5 hover:text-aurora-offwhite'
@@ -159,13 +159,13 @@ export default function Header({ onJoinClick }: HeaderProps) {
                 setIsOpen(false);
                 onJoinClick();
               }}
-              className="w-full text-center bg-transparent text-aurora-gold border border-aurora-gold py-3.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-medium hover:bg-aurora-gold hover:text-aurora-black transition-all flex justify-center items-center gap-2 cursor-pointer shadow-md"
+              className="w-full text-center bg-transparent text-aurora-gold border border-aurora-gold py-3.5 rounded-full text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium hover:bg-aurora-gold hover:text-aurora-black transition-all flex justify-center items-center gap-2 cursor-pointer shadow-md"
             >
               <span>Quero fazer parte</span>
               <ArrowRight size={10} />
             </button>
-            <p className="text-[8px] text-aurora-taupe/40 text-center mt-6 tracking-[0.3em] uppercase">
-              Aurora & Co. • Desperte Desejo
+            <p className="text-[10px] text-aurora-taupe/40 text-center mt-6 tracking-[0.3em] uppercase">
+              Aurora & Co • Desperte Desejo
             </p>
           </div>
         </div>
