@@ -67,27 +67,31 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
         
         {/* Left-aligned Red Velvet Curtain */}
         <div 
-          className="absolute left-0 top-0 bottom-0 w-[55%] sm:w-[45%] md:w-[38%] lg:w-[32%] bg-cover bg-left z-10 opacity-70 sm:opacity-90"
+          className="absolute left-0 top-0 bottom-0 w-[65%] sm:w-[55%] md:w-[50%] lg:w-[45%] bg-cover bg-left z-10 opacity-70 sm:opacity-90"
           style={{
             backgroundImage: 'url(/velvet_curtain.png)',
             backgroundSize: 'cover',
-            backgroundPosition: 'left center'
+            backgroundPosition: 'left center',
+            maskImage: 'linear-gradient(to right, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%)',
+            WebkitMaskImage: 'linear-gradient(to right, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%)'
           }}
         />
 
         {/* Right-aligned Rim-lit Model Silhouette (New Sensual Image) */}
         <div 
-          className="absolute right-0 top-0 bottom-0 w-[50%] sm:w-[45%] md:w-[40%] lg:w-[35%] bg-cover bg-right z-10 opacity-60 sm:opacity-90"
+          className="absolute right-0 top-0 bottom-0 w-[65%] sm:w-[55%] md:w-[50%] lg:w-[45%] bg-cover bg-right z-10 opacity-60 sm:opacity-90"
           style={{
             backgroundImage: 'url(/model_hero_sensual.png)',
             backgroundSize: 'cover',
-            backgroundPosition: 'right center'
+            backgroundPosition: 'right center',
+            maskImage: 'linear-gradient(to left, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%)',
+            WebkitMaskImage: 'linear-gradient(to left, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%)'
           }}
         />
 
         {/* Soft center vignette to prioritize typography readability */}
         <div 
-          className="absolute inset-0 z-15 bg-[radial-gradient(circle_at_center,_rgba(13,13,13,0.35)_0%,_rgba(13,13,13,0.95)_85%)]"
+          className="absolute inset-0 z-15 bg-[radial-gradient(circle_at_center,_rgba(13,13,13,0.15)_0%,_rgba(13,13,13,0.85)_85%)]"
         />
       </div>
 
