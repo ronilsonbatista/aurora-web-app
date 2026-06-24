@@ -4,28 +4,16 @@ import { ShieldCheck } from 'lucide-react';
 export default function Experience() {
   const items = [
     {
-      title: 'Jornada do Assinante',
-      desc: 'Experiência imersiva e de alto padrão desde o primeiro contato no canal privado.'
-    },
-    {
-      title: 'Comunicação Estratégica',
-      desc: 'Tom de voz refinado e interações que geram sentimento de exclusividade.'
-    },
-    {
-      title: 'Conteúdo com Intenção',
-      desc: 'Cronograma planejado para engajar e atiçar a curiosidade e antecipação.'
-    },
-    {
-      title: 'Rotina de Relacionamento',
-      desc: 'Ações de fidelização para transformar assinantes ocasionais em membros recorrentes.'
-    },
-    {
-      title: 'Organização de Prévias & PPV',
-      desc: 'Curadoria estratégica de catálogos premium sem expor a imagem de forma óbvia.'
+      title: 'Jornada de Exclusividade',
+      desc: 'Experiência de alto padrão que transforma fãs em assinantes altamente fiéis.'
     },
     {
       title: 'Retenção & Recorrência',
-      desc: 'Análise diária para combater cancelamentos e estabilizar o faturamento mensal.'
+      desc: 'Gestão ativa para reduzir evasão e estabilizar seu faturamento mensal.'
+    },
+    {
+      title: 'Monetização Silenciosa',
+      desc: 'Vendas de alto ticket focadas em criar antecipação e desejo contínuo.'
     }
   ];
 
@@ -54,11 +42,11 @@ export default function Experience() {
             <div className="w-12 h-[1px] bg-aurora-gold" />
             
             <p className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty">
-              Cada detalhe da jornada é pensado para aumentar conexão, retenção e percepção de valor. Da primeira impressão ao relacionamento contínuo, a Aurora organiza a experiência para que o público enxergue exclusividade, proximidade e desejo.
+              Cada detalhe da jornada é planejado para aumentar conexão, retenção e valor. Do primeiro contato ao relacionamento privado, estruturamos tudo para que o público sinta exclusividade.
             </p>
 
             {/* List items - highly editorial and lightweight */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-aurora-bege/5">
+            <div className="grid grid-cols-1 gap-6 pt-4 border-t border-aurora-bege/5">
               {items.map((item, idx) => (
                 <div key={idx} className="space-y-1">
                   <div className="flex items-center gap-2">
@@ -88,7 +76,7 @@ export default function Experience() {
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
                 style={{
-                  backgroundImage: 'url(/experience_silk.png)',
+                  backgroundImage: 'url(/experience_sensual_silk.png)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}

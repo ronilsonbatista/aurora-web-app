@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className="bg-aurora-offwhite min-h-screen text-aurora-black font-sans antialiased">
+    <div className="bg-aurora-black min-h-screen text-aurora-offwhite font-sans antialiased">
       {/* Header Navigation */}
       <Header onJoinClick={() => scrollToSection('#contato')} />
 

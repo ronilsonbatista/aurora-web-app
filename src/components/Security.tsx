@@ -2,43 +2,25 @@ import { motion } from 'framer-motion';
 import { 
   FileText, 
   DollarSign, 
-  EyeOff, 
-  ShieldCheck, 
-  Headphones, 
-  LineChart 
+  ShieldCheck 
 } from 'lucide-react';
 
 export default function Security() {
   const securityItems = [
     {
       icon: <FileText className="text-aurora-gold" size={18} />,
-      title: 'Contrato Formal',
-      description: 'Segurança jurídica total. Contratos claros, transparentes e registrados que formalizam todos os termos da parceria.'
+      title: 'Segurança Jurídica',
+      description: 'Contrato estruturado por assessoria legal, assegurando a formalidade e garantias da nossa parceria.'
+    },
+    {
+      icon: <ShieldCheck className="text-aurora-gold" size={18} />,
+      title: 'Blindagem de Identidade',
+      description: 'Geobloqueio regional completo e blindagem de dados para garantir sua total privacidade.'
     },
     {
       icon: <DollarSign className="text-aurora-gold" size={18} />,
       title: 'Organização Financeira',
-      description: 'Relatórios claros de faturamento e repasses pontuais programados diretamente para sua conta de preferência.'
-    },
-    {
-      icon: <EyeOff className="text-aurora-gold" size={18} />,
-      title: 'Gestão de Conteúdo',
-      description: 'Armazenamento em nuvem ultra-seguro, backups recorrentes e assessoria de proteção contra vazamentos de imagem.'
-    },
-    {
-      icon: <ShieldCheck className="text-aurora-gold" size={18} />,
-      title: 'Privacidade & Blindagem',
-      description: 'Preservação absoluta da sua identidade real com a aplicação rigorosa de filtros de geobloqueio regional.'
-    },
-    {
-      icon: <Headphones className="text-aurora-gold" size={18} />,
-      title: 'Comunicação Profissional',
-      description: 'Suporte humanizado e dedicado. Canal exclusivo para alinhamentos diários de forma rápida e objetiva.'
-    },
-    {
-      icon: <LineChart className="text-aurora-gold" size={18} />,
-      title: 'Estruturação de Carreira',
-      description: 'Planejamento de crescimento de longo prazo com definição conjunta de metas e diversificação de receitas.'
+      description: 'Conciliação ágil, relatórios claros e repasses pontuais organizados de forma transparente.'
     }
   ];
 
@@ -73,7 +55,7 @@ export default function Security() {
         </div>
 
         {/* Security Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {securityItems.map((item, idx) => (
             <motion.div
               key={idx}

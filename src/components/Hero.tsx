@@ -62,7 +62,7 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center pt-28 pb-24 px-6 md:px-12 bg-aurora-black overflow-hidden select-none"
     >
-      {/* ── BACKGROUND ART COMPOSITION (As seen in the reference print) ── */}
+      {/* ── BACKGROUND ART COMPOSITION ── */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
         
         {/* Left-aligned Red Velvet Curtain */}
@@ -75,11 +75,11 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           }}
         />
 
-        {/* Right-aligned Rim-lit Model Silhouette */}
+        {/* Right-aligned Rim-lit Model Silhouette (New Sensual Image) */}
         <div 
           className="absolute right-0 top-0 bottom-0 w-[50%] sm:w-[45%] md:w-[40%] lg:w-[35%] bg-cover bg-right z-10 opacity-60 sm:opacity-90"
           style={{
-            backgroundImage: 'url(/model_hero_silhouette.png)',
+            backgroundImage: 'url(/model_hero_sensual.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'right center'
           }}
@@ -87,7 +87,7 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
 
         {/* Soft center vignette to prioritize typography readability */}
         <div 
-          className="absolute inset-0 z-15 bg-[radial-gradient(circle_at_center,_rgba(13,13,13,0.3)_0%,_rgba(13,13,13,0.92)_85%)]"
+          className="absolute inset-0 z-15 bg-[radial-gradient(circle_at_center,_rgba(13,13,13,0.35)_0%,_rgba(13,13,13,0.95)_85%)]"
         />
       </div>
 
@@ -121,7 +121,7 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           transition={{ duration: 1.6, ease: 'easeOut' }}
           className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-[6.5rem] font-light text-aurora-gold tracking-[0.12em] uppercase leading-none mb-6 select-none"
         >
-          AURORA & Co.
+          AURORA & CO.
         </motion.h1>
 
         {/* Gold Tagline */}
@@ -131,7 +131,7 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           transition={{ delay: 0.5, duration: 1.2, ease: 'easeOut' }}
           className="font-sans text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.45em] text-aurora-gold/90 font-medium block"
         >
-          GESTÃO PREMIUM PARA CRIADORAS.
+          Gestão premium para criadoras.
         </motion.h2>
 
         {/* Delicate separator line */}
@@ -147,9 +147,9 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 1.2, ease: 'easeOut' }}
-          className="max-w-2xl text-[11px] sm:text-xs md:text-sm text-aurora-bege/85 font-light tracking-widest leading-relaxed mb-12 px-6 text-balance"
+          className="max-w-xl text-[11px] sm:text-xs md:text-sm text-aurora-bege/85 font-light tracking-widest leading-relaxed mb-10 px-6 text-balance"
         >
-          Estratégia, estética e operação para transformar presença em desejo, audiência e resultado.
+          Transformamos presença digital em desejo absoluto e faturamento recorrente.
         </motion.p>
 
         {/* Action CTAs */}
@@ -170,7 +170,7 @@ export default function Hero({ onJoinClick, onStructureClick }: HeroProps) {
             onClick={onStructureClick}
             className="w-full sm:w-auto bg-transparent text-aurora-offwhite border border-aurora-gold/60 hover:bg-aurora-gold hover:text-aurora-black px-10 py-4 rounded-full text-[9px] uppercase tracking-[0.25em] font-medium transition-all duration-300 cursor-pointer"
           >
-            Conhecer a estrutura
+            Conhecer estrutura
           </button>
         </motion.div>
       </div>

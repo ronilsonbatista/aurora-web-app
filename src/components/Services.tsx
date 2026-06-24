@@ -4,11 +4,7 @@ import {
   Sparkles, 
   Compass, 
   Layers, 
-  Share2, 
-  Heart, 
-  MessageSquare, 
-  Eye, 
-  TrendingUp 
+  MessageSquare 
 } from 'lucide-react';
 
 export default function Services() {
@@ -16,50 +12,26 @@ export default function Services() {
     {
       num: '01',
       icon: <Sparkles size={16} className="text-aurora-gold" />,
-      title: 'Posicionamento de Marca',
-      description: 'Construímos uma presença desejável, coerente e estratégica para que a criadora seja percebida como uma marca de luxo, elevando seu valor de mercado.'
+      title: 'Branding & Imagem',
+      description: 'Direção artística e posicionamento de luxo para elevar a percepção de valor do seu perfil.'
     },
     {
       num: '02',
       icon: <Compass size={16} className="text-aurora-gold" />,
-      title: 'Estratégia de Conteúdo',
-      description: 'Desenvolvemos narrativas envolventes e roteiros sob medida, desenhando funis de conteúdo que geram conexão genuína e despertam o desejo de assinatura.'
+      title: 'Conteúdo & Narrativa',
+      description: 'Estratégia narrativa personalizada e funis que despertam desejo imediato e conversão.'
     },
     {
       num: '03',
       icon: <Layers size={16} className="text-aurora-gold" />,
-      title: 'Organização da Operação',
-      description: 'Estruturamos toda a parte técnica, rotinas administrativas e ferramentas digitais para que a criadora tenha total liberdade de focar exclusivamente na criação.'
+      title: 'Operação & Blindagem',
+      description: 'Gestão técnica e administrativa completa para blindar sua rotina de criação.'
     },
     {
       num: '04',
-      icon: <Share2 size={16} className="text-aurora-gold" />,
-      title: 'Gestão de Canais',
-      description: 'Gerenciamento ativo e diário das plataformas de atração e monetização privada, maximizando o fluxo de conversão e a eficiência operacional.'
-    },
-    {
-      num: '05',
-      icon: <Heart size={16} className="text-aurora-gold" />,
-      title: 'Experiência do Assinante',
-      description: 'Desenhamos uma jornada exclusiva e premium para o fã, integrando mimos digitais e mensagens personalizadas que elevam a retenção de longo prazo.'
-    },
-    {
-      num: '06',
       icon: <MessageSquare size={16} className="text-aurora-gold" />,
-      title: 'Atendimento & Relacionamento',
-      description: 'Equipe altamente treinada para gerir mensagens privadas de forma discreta, aplicando técnicas sofisticadas de venda de alto ticket (cross-sell e upsell).'
-    },
-    {
-      num: '07',
-      icon: <Eye size={16} className="text-aurora-gold" />,
-      title: 'Direção Criativa',
-      description: 'Curadoria estética visual de luxo, moodboards de referências exclusivas e direcionamento artístico para garantir a sofisticação da sua imagem.'
-    },
-    {
-      num: '08',
-      icon: <TrendingUp size={16} className="text-aurora-gold" />,
-      title: 'Crescimento & Monetização',
-      description: 'Planejamento estratégico de metas financeiras, campanhas sazonais exclusivas e otimização contínua das fontes de faturamento recorrente.'
+      title: 'Vendas & Relacionamento',
+      description: 'Relacionamento privado de alto ticket conduzido por profissionais qualificados.'
     }
   ];
 
@@ -91,14 +63,14 @@ export default function Services() {
         {/* Header section */}
         <div className="text-center max-w-3xl mx-auto mb-20 md:mb-28 space-y-4">
           <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
-            Entregáveis Aurora
+            Nossos Pilares
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight">
             O que a Aurora entrega
           </h2>
           <div className="w-12 h-[1px] bg-aurora-gold mx-auto mt-6" />
           <p className="text-aurora-bege/60 text-xs sm:text-sm md:text-base font-light tracking-widest max-w-xl mx-auto leading-relaxed pt-2">
-            Cuidamos de toda a inteligência estratégica e operacional para que sua imagem atinja o mais alto patamar de percepção de valor.
+            Cuidamos de toda a inteligência estratégica e operacional para que sua imagem atinja o mais alto patamar de desejo.
           </p>
         </div>
 

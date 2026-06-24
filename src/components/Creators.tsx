@@ -3,12 +3,10 @@ import { Check } from 'lucide-react';
 
 export default function Creators() {
   const points = [
-    'Gestão completa de canais e plataformas',
+    'Gestão de canais e plataformas privadas',
     'Assessoria estética e direção criativa',
     'Atendimento comercial dedicado (chatter)',
-    'Contrato formal com segurança jurídica (18+)',
-    'Investimento em tráfego e infraestrutura por conta da Aurora',
-    'Absoluta confidencialidade e segurança de dados'
+    'Absoluto sigilo e segurança jurídica'
   ];
 
   return (
@@ -36,7 +34,7 @@ export default function Creators() {
                 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight text-balance"
               >
                 Você cria. <br />
-                <span className="italic text-aurora-gold">A Aurora cuida do resto.</span>
+                <span className="italic text-aurora-gold">A Aurora cuida de todo o resto.</span>
               </motion.h2>
             </div>
             
@@ -49,7 +47,7 @@ export default function Creators() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty"
             >
-              A Aurora & Co. atua ao lado de criadoras selecionadas para estruturar marca, conteúdo, canais, atendimento e operação comercial. A modelo foca na presença e na criação. A Aurora cuida da estratégia, organização e crescimento.
+              Atuamos ao lado de criadoras selecionadas estruturando marca, conteúdo, canais e operação. Você foca na sua presença; nós cuidamos da estratégia e do crescimento.
             </motion.p>
 
             {/* Checklist */}

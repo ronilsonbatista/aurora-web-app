@@ -39,10 +39,10 @@ export default function About() {
               className="space-y-6 text-aurora-bege/80 text-sm sm:text-base font-light leading-relaxed max-w-2xl tracking-wide text-pretty"
             >
               <p>
-                A Aurora & Co. une posicionamento, estratégia, produção, operação e acompanhamento contínuo para criadoras que desejam crescer com segurança, estética e performance.
+                A Aurora & Co. desenvolve ecossistemas estratégicos e estéticos sob medida para elevar a percepção de valor de criadoras de alto nível.
               </p>
               <p>
-                Não acreditamos em soluções genéricas ou crescimento sem controle. A nossa missão é construir marcas sólidas, elevar o valor percebido de cada criadora e criar ecossistemas que traduzem conexão genuína em faturamento de alto nível.
+                Unimos direção artística, blindagem total e monetização de alto ticket, transformando conexões genuínas em faturamento recorrente.
               </p>
             </motion.div>
           </div>

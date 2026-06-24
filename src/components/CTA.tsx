@@ -66,14 +66,14 @@ export default function CTA() {
               Processo de Curadoria
             </span>
             <h2 className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight text-balance">
-              Sua imagem pode ser uma marca desejada.
+              Sua imagem. <br />Uma marca de desejo.
             </h2>
             <div className="w-12 h-[1px] bg-aurora-gold" />
             <p className="text-aurora-bege/80 text-xs sm:text-sm md:text-base font-light leading-relaxed tracking-widest text-pretty pt-2">
-              Se você quer crescer com estética, estratégia e uma operação profissional por trás, envie seu perfil para avaliação.
+              Envie seu perfil para curadoria. Avaliamos cada candidatura sob absoluto sigilo.
             </p>
             <p className="text-[10px] text-aurora-taupe/70 italic font-light tracking-wide pt-4 border-t border-aurora-bege/5">
-              *Todas as informações enviadas são tratadas sob absoluto sigilo e confidencialidade profissional.
+              *Informações tratadas sob estrito sigilo profissional.
             </p>
           </div>
 
