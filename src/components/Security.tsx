@@ -11,49 +11,50 @@ import {
 export default function Security() {
   const securityItems = [
     {
-      icon: <FileText className="text-aurora-wine" size={20} />,
+      icon: <FileText className="text-aurora-gold" size={18} />,
       title: 'Contrato Formal',
-      description: 'Segurança jurídica para ambas as partes. Acordos claros, transparentes e registrados.'
+      description: 'Segurança jurídica total. Contratos claros, transparentes e registrados que formalizam todos os termos da parceria.'
     },
     {
-      icon: <DollarSign className="text-aurora-wine" size={20} />,
+      icon: <DollarSign className="text-aurora-gold" size={18} />,
       title: 'Organização Financeira',
-      description: 'Relatórios de faturamento transparentes e repasses pontuais programados.'
+      description: 'Relatórios claros de faturamento e repasses pontuais programados diretamente para sua conta de preferência.'
     },
     {
-      icon: <EyeOff className="text-aurora-wine" size={20} />,
+      icon: <EyeOff className="text-aurora-gold" size={18} />,
       title: 'Gestão de Conteúdo',
-      description: 'Armazenamento seguro, backup e assessoria contra vazamentos e proteção de marca.'
+      description: 'Armazenamento em nuvem ultra-seguro, backups recorrentes e assessoria de proteção contra vazamentos de imagem.'
     },
     {
-      icon: <ShieldCheck className="text-aurora-wine" size={20} />,
-      title: 'Privacidade e Segurança',
-      description: 'Preservação da sua identidade real através de estratégias de geobloqueio.'
+      icon: <ShieldCheck className="text-aurora-gold" size={18} />,
+      title: 'Privacidade & Blindagem',
+      description: 'Preservação absoluta da sua identidade real com a aplicação rigorosa de filtros de geobloqueio regional.'
     },
     {
-      icon: <Headphones className="text-aurora-wine" size={20} />,
+      icon: <Headphones className="text-aurora-gold" size={18} />,
       title: 'Comunicação Profissional',
-      description: 'Suporte humanizado e dedicado. Canais rápidos de contato diário com a gerência.'
+      description: 'Suporte humanizado e dedicado. Canal exclusivo para alinhamentos diários de forma rápida e objetiva.'
     },
     {
-      icon: <LineChart className="text-aurora-wine" size={20} />,
-      title: 'Planejamento de Crescimento',
-      description: 'Definição conjunta de metas, benchmarks de mercado e plano estratégico de carreira.'
+      icon: <LineChart className="text-aurora-gold" size={18} />,
+      title: 'Estruturação de Carreira',
+      description: 'Planejamento de crescimento de longo prazo com definição conjunta de metas e diversificação de receitas.'
     }
   ];
 
   return (
     <section
-      className="py-24 md:py-32 px-6 md:px-12 bg-aurora-black text-aurora-offwhite relative overflow-hidden"
+      className="py-28 md:py-36 px-6 md:px-12 bg-aurora-black text-aurora-offwhite relative overflow-hidden"
     >
       {/* Background glow */}
       <div className="absolute top-[-30%] left-[-20%] w-[500px] h-[500px] rounded-full bg-aurora-wine/5 blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[-20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-aurora-gold/5 blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
-        <div className="max-w-3xl mb-16 md:mb-24 space-y-6">
-          <span className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-aurora-wine font-medium block">
+        <div className="max-w-3xl mb-20 md:mb-28 space-y-6">
+          <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-aurora-wine font-semibold block">
             Segurança & Blindagem
           </span>
           <motion.h2
@@ -61,18 +62,18 @@ export default function Security() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-3xl sm:text-4xl md:text-5xl text-aurora-offwhite font-semibold leading-tight text-balance"
+            className="font-serif text-4xl sm:text-5xl text-aurora-offwhite font-light leading-tight text-balance"
           >
-            Discrição, contrato e estrutura.
+            Discrição, contrato e estrutura corporativa.
           </motion.h2>
-          <div className="w-12 h-[1px] bg-aurora-wine" />
-          <p className="text-aurora-taupe text-sm md:text-base font-light tracking-wide max-w-xl">
-            Toda a nossa operação é pautada pelo profissionalismo corporativo, assegurando a proteção da sua imagem e dos seus dados.
+          <div className="w-12 h-[1px] bg-aurora-gold" />
+          <p className="text-aurora-taupe text-xs sm:text-sm md:text-base font-light tracking-widest max-w-xl leading-relaxed pt-2">
+            Toda a nossa operação é pautada pelo profissionalismo corporativo, assegurando a proteção integral da sua imagem e dos seus dados.
           </p>
         </div>
 
         {/* Security Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {securityItems.map((item, idx) => (
             <motion.div
               key={idx}
@@ -80,22 +81,27 @@ export default function Security() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05, duration: 0.6 }}
-              className="bg-aurora-black-light border border-aurora-bege/5 hover:border-aurora-wine/30 rounded-xl p-6 md:p-8 flex flex-col justify-between transition-all duration-300 group"
+              whileHover={{ 
+                y: -3,
+                borderColor: 'rgba(184, 155, 106, 0.35)', // gold highlight
+                boxShadow: '0 12px 24px -10px rgba(184, 155, 106, 0.02)'
+              }}
+              className="bg-aurora-black-light border border-aurora-bege/5 hover:border-aurora-gold/20 rounded-xl p-6 md:p-8 flex flex-col justify-between transition-all duration-300 group"
             >
               <div className="space-y-4">
-                {/* Icon Circle */}
-                <div className="w-10 h-10 rounded-lg bg-aurora-wine/10 flex items-center justify-center group-hover:scale-105 transition-transform">
+                {/* Icon Container */}
+                <div className="w-9 h-9 rounded-lg bg-aurora-wine/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                   {item.icon}
                 </div>
                 
                 {/* Title */}
-                <h3 className="font-serif text-lg font-medium text-aurora-offwhite group-hover:text-aurora-wine transition-colors">
+                <h3 className="font-serif text-lg font-medium text-aurora-offwhite group-hover:text-aurora-wine transition-colors duration-300">
                   {item.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-aurora-taupe text-xs sm:text-sm font-light leading-relaxed mt-4">
+              <p className="text-aurora-taupe text-[11px] sm:text-xs md:text-sm font-light leading-relaxed mt-4 tracking-wide">
                 {item.description}
               </p>
             </motion.div>

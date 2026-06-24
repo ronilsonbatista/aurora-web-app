@@ -4,10 +4,10 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="py-24 md:py-36 px-6 md:px-12 bg-aurora-offwhite relative overflow-hidden"
+      className="py-28 md:py-40 px-6 md:px-12 bg-aurora-offwhite relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           
           {/* Text content - taking 7 cols on desktop */}
           <div className="lg:col-span-7 space-y-8 z-10">
@@ -18,20 +18,22 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="space-y-4"
             >
-              <span className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-aurora-wine font-medium block">
+              <span className="text-[10px] md:text-xs uppercase tracking-[0.35em] text-aurora-wine font-semibold block">
                 Sobre a Aurora & Co.
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-aurora-black font-semibold leading-[1.15] text-balance">
-                Uma gestão feita para transformar presença em desejo.
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-aurora-black font-light leading-[1.15] text-balance">
+                Uma gestão feita para transformar <span className="italic text-aurora-wine">presença em desejo</span>.
               </h2>
             </motion.div>
+
+            <div className="w-12 h-[1px] bg-aurora-gold" />
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="space-y-6 text-aurora-taupe text-sm sm:text-base md:text-lg font-light leading-relaxed max-w-2xl text-pretty"
+              className="space-y-6 text-aurora-taupe text-sm sm:text-base font-light leading-relaxed max-w-2xl tracking-wide text-pretty"
             >
               <p>
                 A Aurora & Co. une posicionamento, estratégia, produção, operação e acompanhamento contínuo para criadoras que desejam crescer com segurança, estética e performance.
@@ -49,27 +51,28 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="relative w-full max-w-sm aspect-[4/5] bg-aurora-black p-8 md:p-12 flex flex-col justify-between shadow-2xl rounded-sm border border-aurora-bege/20 overflow-hidden"
+              className="relative w-full max-w-sm aspect-[4/5] bg-aurora-black p-8 md:p-12 flex flex-col justify-between shadow-2xl rounded-sm border border-aurora-gold/20 overflow-hidden"
             >
-              {/* Inner subtle glow */}
+              {/* Inner subtle gold/wine glow */}
               <div className="absolute top-[-50%] right-[-50%] w-[300px] h-[300px] rounded-full bg-aurora-wine/10 blur-[80px]" />
+              <div className="absolute bottom-[-30%] left-[-30%] w-[250px] h-[250px] rounded-full bg-aurora-gold/5 blur-[70px]" />
               
               <div className="z-10">
-                <span className="font-serif text-3xl text-aurora-bege italic">A.</span>
+                <span className="font-serif text-4xl text-aurora-gold italic font-light">A.</span>
                 <div className="w-8 h-[1px] bg-aurora-wine my-4" />
               </div>
 
               <div className="z-10 space-y-4">
-                <p className="font-serif text-lg sm:text-xl text-aurora-offwhite tracking-wide italic leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl text-aurora-offwhite/90 tracking-wide italic leading-relaxed font-light">
                   "A beleza do mistério atrai mais do que a obviedade da exposição."
                 </p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-aurora-taupe">
+                <p className="text-[9px] tracking-[0.25em] uppercase text-aurora-gold/80 font-medium">
                   Estratégia & Sofisticação
                 </p>
               </div>
 
-              {/* Decorative line in the poster */}
-              <div className="absolute bottom-0 right-0 left-0 h-1 bg-aurora-wine" />
+              {/* Decorative gold line in the poster */}
+              <div className="absolute bottom-0 right-0 left-0 h-[2px] bg-gradient-to-r from-aurora-wine via-aurora-gold to-aurora-wine" />
             </motion.div>
           </div>
 

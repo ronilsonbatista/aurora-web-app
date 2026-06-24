@@ -2,8 +2,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Structure from './components/Structure';
-import Models from './components/Models';
+import Experience from './components/Experience';
+import Creators from './components/Creators';
 import Manifesto from './components/Manifesto';
 import Security from './components/Security';
 import CTA from './components/CTA';
@@ -34,20 +34,20 @@ function App() {
         {/* Hero Banner */}
         <Hero 
           onJoinClick={() => scrollToSection('#contato')} 
-          onStructureClick={() => scrollToSection('#estrutura')} 
+          onStructureClick={() => scrollToSection('#experiencia')} 
         />
 
         {/* Brand Mission & About */}
         <About />
 
-        {/* 8 Operational Pillars */}
+        {/* Deliverables / "O que a Aurora entrega" */}
         <Services />
 
-        {/* Pipeline & Operation Structure */}
-        <Structure />
+        {/* Experience / "A experiência por trás do desejo" */}
+        <Experience />
 
-        {/* 50/50 Partnership Split Details */}
-        <Models />
+        {/* Partner Creators Model */}
+        <Creators />
 
         {/* Brand Manifesto center slide */}
         <Manifesto />
@@ -55,7 +55,7 @@ function App() {
         {/* Security & Professionalism principles */}
         <Security />
 
-        {/* Onboarding onboarding form */}
+        {/* Onboarding Form */}
         <CTA />
       </main>
 
